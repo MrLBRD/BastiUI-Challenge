@@ -1,0 +1,129 @@
+body {
+  background-color: #06071b;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  gap: 2rem;
+}
+
+body .head {
+  width: 112px;
+  height: 112px;
+  border-radius: 112px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .head#one {
+  background: radial-gradient(farthest-corner at 10% 75%, #FF603E, #FF8153);
+}
+
+body .head#one .moose {
+  width: 16px;
+  height: 8px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border: 8px solid #0b0b0b;
+  border-bottom: 0;
+}
+
+body .head#two {
+  background: radial-gradient(farthest-corner at 10% 75%, #FF833E, #FFAD53);
+}
+
+body .head#two .moose {
+  width: 16px;
+  height: 8px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border: 8px solid #0b0b0b;
+  border-bottom: 0;
+}
+
+body .head#three {
+  background: radial-gradient(farthest-corner at 10% 75%, #FFC061, #FFD683);
+}
+
+body .head#three .moose {
+  width: 32px;
+  height: 8px;
+  background-color: #0b0b0b;
+}
+
+body .head#four {
+  background: radial-gradient(farthest-corner at 10% 75%, #FFD43E, #FFE252);
+}
+
+body .head#four .moose {
+  width: 16px;
+  height: 8px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border: 8px solid #0b0b0b;
+  border-top: 0;
+}
+
+body .head#five {
+  background: radial-gradient(farthest-corner at 10% 75%, #FFED4E, #FFF368);
+}
+
+body .head#five .moose {
+  width: 32px;
+  height: 16px;
+  border-radius: 0 0 16px 16px;
+  background-color: #0b0b0b;
+}
+
+body .head .eyes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80px;
+  height: 24px;
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+  -webkit-transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.4s;
+}
+
+body .head .eyes .eye {
+  background-color: #0b0b0b;
+  border-radius: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+body .head .eyes .moose {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+body .head .eyes:hover {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+/*# sourceMappingURL=style.css.map */
