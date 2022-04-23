@@ -3,7 +3,7 @@ $eyes: (56px - 16px) * 2;
 $eye: 8px * 2;
 
 body {
-    background-color: #06071b;
+    background-color: #00232B;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -22,59 +22,128 @@ body {
         justify-content: center;
         align-items: center;
 
+        &.active {
+            border: solid 8px #fff;
+        }
+        &.inactive {
+            opacity: 0.6;
+        }
+
         &#one {
-            background: radial-gradient(farthest-corner at 10% 75%, #FF603E, #FF8153);
+            background: radial-gradient(farthest-corner at 5% 72.5%, #FF422A, #FF8153);
+
+            .eyes {
+                transform: translate3d(10%,75%,0);
+            }
+
+            &:hover {
+                background: radial-gradient(farthest-corner at 0% 80%, #FF1A11, #FFA66B);
+
+                .eyes {
+                   transform: translate3d(0%,75%,0);
+                }
+            }
 
             .moose {
                 width: 16px;
                 height: 8px;
                 border-top-left-radius: 16px;
                 border-top-right-radius: 16px;
-                border: 8px solid #0b0b0b;
+                border: 8px solid #00232B;
                 border-bottom: 0;
             }
         }
         &#two {
-            background: radial-gradient(farthest-corner at 10% 75%, #FF833E, #FFAD53);
+            background: radial-gradient(farthest-corner at 5% 72.5%, #FF5A29, #FFAD53);
+
+            .eyes {
+                transform: translate3d(10%,50%,0);
+            }
+
+            &:hover {
+                background: radial-gradient(farthest-corner at 0% 80%, #FF2710, #FFDD6B);
+
+                .eyes {
+                    transform: translate3d(0%,50%,0);
+                }
+            }
 
             .moose {
                 width: 16px;
                 height: 8px;
                 border-top-left-radius: 16px;
                 border-top-right-radius: 16px;
-                border: 8px solid #0b0b0b;
+                border: 8px solid #00232B;
                 border-bottom: 0;
             }
         }
         &#three {
-            background: radial-gradient(farthest-corner at 10% 75%, #FFC061, #FFD683);
+            background: radial-gradient(farthest-corner at 5% 72.5%, #FFAA40, #FFD683);
+
+            .eyes {
+                transform: translate3d(10%,0%,0);
+            }
+
+            &:hover {
+                background: radial-gradient(farthest-corner at 0% 80%, #FF931C, #FFECA5);
+
+                .eyes {
+                    transform: translate3d(0%,0%,0);
+                }
+            }
 
             .moose {
                 width: 32px;
                 height: 8px;
-                background-color: #0b0b0b;
+                background-color: #00232B;
             }
         }
         &#four {
-            background: radial-gradient(farthest-corner at 10% 75%, #FFD43E, #FFE252);
+            background: radial-gradient(farthest-corner at 5% 72.5%, #FFC528, #FFE252);
             
+            .eyes {
+                transform: translate3d(10%,-50%,0);
+            }
+
+            &:hover {
+                background: radial-gradient(farthest-corner at 0% 80%, #FFB512, #FFF36B);
+
+                .eyes {
+                    transform: translate3d(0%,-50%,0);
+                }
+            }
+
             .moose {
                 width: 16px;
                 height: 8px;
                 border-bottom-left-radius: 16px;
                 border-bottom-right-radius: 16px;
-                border: 8px solid #0b0b0b;
+                border: 8px solid #00232B;
                 border-top: 0;
+                transform: translateY(50%);
             }
         }
         &#five {
-            background: radial-gradient(farthest-corner at 10% 75%, #FFED4E, #FFF368);
+            background: radial-gradient(farthest-corner at 5% 72.5%, #FFC528, #FFF368);
             
+            .eyes {
+                transform: translate3d(10%,-75%,0);
+            }
+
+            &:hover {
+                background: radial-gradient(farthest-corner at 0% 80%, #FFE015, #FFFA87);
+
+                .eyes {
+                    transform: translate3d(0%,-75%,0);
+                }
+            }
+
             .moose {
                 width: 32px;
                 height: 16px;
                 border-radius: 0 0 16px 16px;
-                background-color: #0b0b0b;
+                background-color: #00232B;
+                transform: translateY(50%);
             }
         }
 
@@ -87,7 +156,7 @@ body {
             transition: ease-in-out 0.4s;
 
             .eye {
-                background-color: #0b0b0b;
+                background-color: #00232B;
                 border-radius: $eye;
                 width: $eye;
                 height: $eye;
@@ -97,9 +166,10 @@ body {
                 align-self: flex-end;
             }
 
-            &:hover {
-                transform: translateX(0);
-            }
+        }
+        
+        &:hover .eyes {
+            transform: translateX(0);
         }
     }
 }

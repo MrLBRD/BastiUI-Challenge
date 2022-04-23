@@ -43,5 +43,33 @@
             <div class="eye"></div>
         </div>
     </div>
+
+    <script>
+        let heads = []
+        heads.push(document.getElementById('one'))
+        heads.push(document.getElementById('two'))
+        heads.push(document.getElementById('three'))
+        heads.push(document.getElementById('four'))
+        heads.push(document.getElementById('five'))
+
+        heads.forEach(el => {
+            el.addEventListener('click', (e) => {
+                heads.forEach(head => {
+                    head.classList.remove('active')
+                    head.classList.add('inactive')
+                })
+                el.classList.remove('inactive')
+                el.classList.add('active')
+            })
+        })
+
+
+        // document.addEventListener('click', function(e) {
+        //     e = e || window.event;
+        //     var target = e.target || e.srcElement
+        //     target.classList.add("active")
+        //     console.log(target.classList);
+        // }, false);
+    </script>
 </body>
 </html>

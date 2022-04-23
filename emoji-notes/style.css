@@ -1,5 +1,5 @@
 body {
-  background-color: #06071b;
+  background-color: #00232B;
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -35,8 +35,30 @@ body .head {
           align-items: center;
 }
 
+body .head.active {
+  border: solid 8px #fff;
+}
+
+body .head.inactive {
+  opacity: 0.6;
+}
+
 body .head#one {
-  background: radial-gradient(farthest-corner at 10% 75%, #FF603E, #FF8153);
+  background: radial-gradient(farthest-corner at 5% 72.5%, #FF422A, #FF8153);
+}
+
+body .head#one .eyes {
+  -webkit-transform: translate3d(10%, 75%, 0);
+          transform: translate3d(10%, 75%, 0);
+}
+
+body .head#one:hover {
+  background: radial-gradient(farthest-corner at 0% 80%, #FF1A11, #FFA66B);
+}
+
+body .head#one:hover .eyes {
+  -webkit-transform: translate3d(0%, 75%, 0);
+          transform: translate3d(0%, 75%, 0);
 }
 
 body .head#one .moose {
@@ -44,12 +66,26 @@ body .head#one .moose {
   height: 8px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  border: 8px solid #0b0b0b;
+  border: 8px solid #00232B;
   border-bottom: 0;
 }
 
 body .head#two {
-  background: radial-gradient(farthest-corner at 10% 75%, #FF833E, #FFAD53);
+  background: radial-gradient(farthest-corner at 5% 72.5%, #FF5A29, #FFAD53);
+}
+
+body .head#two .eyes {
+  -webkit-transform: translate3d(10%, 50%, 0);
+          transform: translate3d(10%, 50%, 0);
+}
+
+body .head#two:hover {
+  background: radial-gradient(farthest-corner at 0% 80%, #FF2710, #FFDD6B);
+}
+
+body .head#two:hover .eyes {
+  -webkit-transform: translate3d(0%, 50%, 0);
+          transform: translate3d(0%, 50%, 0);
 }
 
 body .head#two .moose {
@@ -57,22 +93,50 @@ body .head#two .moose {
   height: 8px;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  border: 8px solid #0b0b0b;
+  border: 8px solid #00232B;
   border-bottom: 0;
 }
 
 body .head#three {
-  background: radial-gradient(farthest-corner at 10% 75%, #FFC061, #FFD683);
+  background: radial-gradient(farthest-corner at 5% 72.5%, #FFAA40, #FFD683);
+}
+
+body .head#three .eyes {
+  -webkit-transform: translate3d(10%, 0%, 0);
+          transform: translate3d(10%, 0%, 0);
+}
+
+body .head#three:hover {
+  background: radial-gradient(farthest-corner at 0% 80%, #FF931C, #FFECA5);
+}
+
+body .head#three:hover .eyes {
+  -webkit-transform: translate3d(0%, 0%, 0);
+          transform: translate3d(0%, 0%, 0);
 }
 
 body .head#three .moose {
   width: 32px;
   height: 8px;
-  background-color: #0b0b0b;
+  background-color: #00232B;
 }
 
 body .head#four {
-  background: radial-gradient(farthest-corner at 10% 75%, #FFD43E, #FFE252);
+  background: radial-gradient(farthest-corner at 5% 72.5%, #FFC528, #FFE252);
+}
+
+body .head#four .eyes {
+  -webkit-transform: translate3d(10%, -50%, 0);
+          transform: translate3d(10%, -50%, 0);
+}
+
+body .head#four:hover {
+  background: radial-gradient(farthest-corner at 0% 80%, #FFB512, #FFF36B);
+}
+
+body .head#four:hover .eyes {
+  -webkit-transform: translate3d(0%, -50%, 0);
+          transform: translate3d(0%, -50%, 0);
 }
 
 body .head#four .moose {
@@ -80,19 +144,37 @@ body .head#four .moose {
   height: 8px;
   border-bottom-left-radius: 16px;
   border-bottom-right-radius: 16px;
-  border: 8px solid #0b0b0b;
+  border: 8px solid #00232B;
   border-top: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 body .head#five {
-  background: radial-gradient(farthest-corner at 10% 75%, #FFED4E, #FFF368);
+  background: radial-gradient(farthest-corner at 5% 72.5%, #FFC528, #FFF368);
+}
+
+body .head#five .eyes {
+  -webkit-transform: translate3d(10%, -75%, 0);
+          transform: translate3d(10%, -75%, 0);
+}
+
+body .head#five:hover {
+  background: radial-gradient(farthest-corner at 0% 80%, #FFE015, #FFFA87);
+}
+
+body .head#five:hover .eyes {
+  -webkit-transform: translate3d(0%, -75%, 0);
+          transform: translate3d(0%, -75%, 0);
 }
 
 body .head#five .moose {
   width: 32px;
   height: 16px;
   border-radius: 0 0 16px 16px;
-  background-color: #0b0b0b;
+  background-color: #00232B;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 body .head .eyes {
@@ -111,7 +193,7 @@ body .head .eyes {
 }
 
 body .head .eyes .eye {
-  background-color: #0b0b0b;
+  background-color: #00232B;
   border-radius: 16px;
   width: 16px;
   height: 16px;
@@ -122,7 +204,7 @@ body .head .eyes .moose {
       align-self: flex-end;
 }
 
-body .head .eyes:hover {
+body .head:hover .eyes {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
